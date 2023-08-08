@@ -1,0 +1,70 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+#message {
+  padding: 60px 0;
+}
+#message .chat {
+  border: 1px solid rgba(172, 200, 255, 0.2666666667);
+  background-color: rgba(175, 199, 255, 0.3411764706);
+  border-radius: 20px;
+  padding: 25px;
+  width: 550px;
+}
+#message .chat .message {
+  padding: 10px;
+  height: 30vh;
+  overflow: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
+}
+#message .chat .message::-webkit-scrollbar {
+  display: none;
+}
+#message .chat .message .line {
+  display: inline-block;
+  margin-bottom: 10px;
+  background-color: #829fd7;
+  padding: 8px;
+  border-radius: 20px;
+  color: white;
+  text-align: start;
+  max-width: 50%;
+}
+#message .chat .message .line h3 {
+  color: white;
+}
+#message .chat .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#message .chat .text input {
+  border-radius: 20px;
+}
+#message .chat .text .sent {
+  background-color: #829fd7;
+  color: white;
+  width: 70px;
+  padding: 8px;
+  border-radius: 20px;
+  margin: 10px;
+}
+#message .chat .text .sent h3 {
+  color: white;
+  margin-left: 12px;
+  cursor: pointer;
+}
+#message .end {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  #message .chat {
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,60 @@
+#message
+    padding: 60px 0
+    .chat
+        border: 1px solid #acc8ff44
+        background-color: #afc7ff57
+        border-radius: 20px
+        padding: 25px
+        width: 550px
+        .message
+            padding: 10px
+            height: 30vh
+            overflow: auto
+            border: 1px solid #ffff
+            border-radius: 20px
+            background-color: #ffff
+            &::-webkit-scrollbar
+                display: none
+            .line
+                display: inline-block
+                margin-bottom: 10px
+                background-color: #829fd7
+                padding: 8px
+                border-radius: 20px
+                color: #ffff
+                text-align: start
+                max-width: 50%
+                h3
+                    color: #ffff
+        .text
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 10px
+            input
+                // border: 2px solid #474747
+                border-radius: 20px
+            .sent
+                background-color: #829fd7
+                color: #ffff
+                width: 70px
+                padding: 8px
+                border-radius: 20px
+                margin: 10px
+                h3
+                    color: #ffff
+                    margin-left: 12px
+                    cursor: pointer
+    .end
+        display: flex
+        justify-content: flex-end
+
+
+
+
+
+
+
+    @media screen and ( max-width: 768px )
+        .chat
+            margin: 20px 0
